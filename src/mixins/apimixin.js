@@ -14,7 +14,7 @@ export default {
           if (data && callBack)
             callBack(data)
         }
-        this.currentUrl = path
+        this.currentUrl = process.env.API_URL_GDL + path
       }
     },
     postData: function(path, data, callBack) {
@@ -27,7 +27,7 @@ export default {
           if (data && callBack)
             callBack(data)
         }
-        this.currentUrl = path
+        this.currentUrl = process.env.API_URL_GDL + path
       }
     },
     putData: function(path, data, callBack) {
@@ -40,7 +40,7 @@ export default {
           if(data && callBack)
             callBack(data)
         }
-        this.currentUrl = path
+        this.currentUrl = process.env.API_URL_GDL + path
       }
     },
     deleteData: function(path, callBack) {
@@ -51,7 +51,7 @@ export default {
           if (data && callBack)
             callBack(data)
         }
-        this.currentUrl = path
+        this.currentUrl = process.env.API_URL_GDL + path
       }
     }
   }
