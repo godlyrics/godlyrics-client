@@ -31,6 +31,7 @@
         ></v-avatar>
       </v-app-bar>
       <v-main class="grey lighten-3">
+        <img src="./assets/logo.png">
         <v-container>
           <v-row>
             <v-col

@@ -1,14 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <GdlAppBar/>
+    <v-app id="inspire">
+      <v-main class="grey lighten-3">
+        <router-view/>
+      </v-main>
+    </v-app>
   </div>
 </template>
 
 <script>
+
+import GdlAppBar from './components/gdl-appbars/GdlAppBar'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    GdlAppBar
+  }
 }
+
 </script>
 
 <style>
