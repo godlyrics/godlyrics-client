@@ -29,7 +29,6 @@
         size="32"
       ></v-avatar>
     </v-app-bar>
-
     <v-main class="grey lighten-3">
       <v-container>
         <v-row>
@@ -105,7 +104,17 @@
 </template>
 
 <script>
+import ExampleMixin from "./../mixins/ExampleMixin";
+import {testMethod} from "./../utilityfunction/example"
+
 export default {
+  mixins: [ExampleMixin],
+  methods: {
+    testMethod,
+    decrement() {
+      this.count--;
+    }
+  },
   data: () => ({
     links: [
       'Dashboard',
