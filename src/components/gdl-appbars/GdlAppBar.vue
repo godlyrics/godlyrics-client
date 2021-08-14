@@ -17,9 +17,9 @@
       <v-tab
         v-for="link in links"
         :key="link"
-        href="/admin"
+        :href="link.href"
       >
-        {{ link }}
+        {{ link.item }}
       </v-tab>
     </v-tabs>
 
@@ -36,10 +36,8 @@ export default {
   name: 'GdlAppBar',
   data: () => ({
     links: [
-      'Dashboard',
-      'Messages',
-      'Profile',
-      'Updates'
+      {item : 'Dashboard', href : '/'},
+      {item : 'Admin', href : '/admin'},
     ]
   })
 }
