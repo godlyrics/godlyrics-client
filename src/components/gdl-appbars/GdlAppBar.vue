@@ -36,8 +36,7 @@ export default {
   name: 'GdlAppBar',
   data: () => ({
     links: [
-      {item : 'Dashboard', href : '/'},
-      {item : 'Admin', href : '/admin'},
+      {item: 'Dashboard', href: '/'}
     ]
   })
 }

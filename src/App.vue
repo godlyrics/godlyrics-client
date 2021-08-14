@@ -1,23 +1,12 @@
 <template>
   <div id="app">
-    <GdlAppBar/>
-    <v-app id="inspire">
-      <v-main class="grey lighten-3">
-        <router-view/>
-      </v-main>
-    </v-app>
+    <router-view/>
   </div>
 </template>
 
 <script>
-
-import GdlAppBar from './components/gdl-appbars/GdlAppBar'
-
 export default {
-  name: 'App',
-  components: {
-    GdlAppBar
-  }
+  name: 'App'
 }
 
 </script>
